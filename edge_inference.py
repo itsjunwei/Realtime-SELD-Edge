@@ -111,7 +111,7 @@ def infer_audio(model, feature_type):
     pred_start = time.time()
 
     # ONNX Runtime
-    ort_inputs = {model.get_inputs()[0].name : features.astype(float)}
+    ort_inputs = {model.get_inputs()[0].name : features.astype(np.float32)}
     output = model.run(None, ort_inputs)
     output = np.array(output[0])
 
