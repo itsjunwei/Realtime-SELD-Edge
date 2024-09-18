@@ -1,6 +1,8 @@
 # Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices
 
-This repository implements the real-time SELD inference pipeline codes in the paper "Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices" submitted to ICASSP 2025. We do not provide training scripts for the models referred to in the paper. Instead, please refer to the [DCASE Challenge 2023 Task 3 baseline code](https://github.com/sharathadavanne/seld-dcase2023) for model training.
+This repository implements the real-time Sound Event Localization and Detection (SELD) inference pipeline codes in the paper "Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices" submitted to ICASSP 2025. 
+
+Please note that we do not provide training scripts for the models referred to in the paper. Instead, please refer to the [DCASE Challenge 2023 Task 3 baseline code](https://github.com/sharathadavanne/seld-dcase2023) for model training. While this codebase is largely complete, as the paper is still under review, future changes/updates may come at a later date.
 
 ## Models
 The model checkpoints in the Open Neural Network Exchange (ONNX) format in the `./models` folder contain randomly initialized weights, but use the same underlying model architecture as described in the paper. In other words, these models are not capable of inference, but can be used to benchmark speed/hardware performance on the edge device. 
@@ -8,7 +10,7 @@ The model checkpoints in the Open Neural Network Exchange (ONNX) format in the `
 
 ## Scripts
 
-Currently, this repository contains the scripts used to benchmark the feature extraction and inference speeds
+Currently, this repository contains the scripts used to benchmark the feature extraction and inference speeds. We hope that these will help advance the research on real-time SELD systems.
 
 * `audio_device_checker.py` helps you to determine which audio device index to use for the PyAudio integration.
 * `comparing_feature_extraction.py` benchmarks the feature extraction speeds without any multi-threadining involved.
@@ -36,3 +38,7 @@ Below results assumes $T_r = 1, n = 2, T_w = 2$
 | MelGCC | 10 x 160 x 128 | ResNet-18 | 3.868 | 0.791 | 0.433 | 0.488 | 0.079 |
 
 Please note that these results may not be entirely replicable due to different hardware and device setups. However, you should observe similar trends with regards to these selected input features and models. 
+
+## Contact
+
+If any further information is required, please contact the author at junwei004@e.ntu.edu.sg
