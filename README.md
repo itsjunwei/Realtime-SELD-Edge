@@ -1,6 +1,6 @@
 # Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices
 
-This repository implements the real-time Sound Event Localization and Detection (SELD) inference pipeline codes in the paper "Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices" submitted to ICASSP 2025. 
+This repository implements the real-time Sound Event Localization and Detection (SELD) inference pipeline codes in the paper "Real-Time Sound Event Localization and Detection: Deployment Challenges on Edge Devices" submitted to ICASSP 2025. You may preview the paper on arXiv here (https://arxiv.org/abs/2409.11700)
 
 Please note that we do not provide training scripts for the models referred to in the paper. Instead, please refer to the [DCASE Challenge 2023 Task 3 baseline code](https://github.com/sharathadavanne/seld-dcase2023) for model training. While this codebase is largely complete, as the paper is still under review, future changes/updates may come at a later date.
 
